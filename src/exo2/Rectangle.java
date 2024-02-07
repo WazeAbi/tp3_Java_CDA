@@ -45,5 +45,7 @@ public class Rectangle extends Forme{
         this.longuerRectangle = longuerRectangle;
     }
 
-
+    @Override
+    public String afficher() {
+        return super.afficher() +" "+ getHauteurRectangle()+" " +getLonguerRectangle();}
 }
