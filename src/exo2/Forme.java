@@ -24,6 +24,20 @@ public class Forme {
         }
         setY(y);
     }
+    public void deplacer (int new_x , int new_y){
+        this.x = new_x;
+        this.y = new_y;
+    }
+    public void verifier(){
+        if ((getX()<0 || getX()>800)&&(getY()<0 || getY()>600)) {
+        System.out.println("Les valeurs de X et Y ne sont pas comprisent dans les bornes");
+        }
+        else if (getX()<0 || getX()>800){
+            System.out.println("La valeurs de X n'est pas compris dans les bornes");
+        } else if (getY()<0 || getY()>600) {
+            System.out.println("La valeurs de Y n'est pas compris dans les bornes");
+        }  else System.out.println("Les valeurs de X et y sont comprisent dans les bornes");
+    }
     public String afficher(){
         return " "+getX()+ " "+getY();
 

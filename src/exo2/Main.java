@@ -8,7 +8,8 @@ public class Main {
         Forme forme = new Forme();
         forme.creer();
         System.out.println(forme.afficher());
-
-
+        forme.deplacer(12,-12);
+        System.out.println(forme.afficher());
+        forme.verifier();
     }
 }
