@@ -23,6 +23,12 @@ public class Rectangle extends Forme{
         }
         setLonguerRectangle(longeur);
     }
+    public int aireRectangle(){
+       return getHauteurRectangle()*getLonguerRectangle();
+    }
+    public int perimetreRectangle(){
+        return 2*(getLonguerRectangle()+getHauteurRectangle());
+    }
     public int getHauteurRectangle() {
         return hauteurRectangle;
     }
